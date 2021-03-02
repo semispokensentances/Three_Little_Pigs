@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script> 
+    <title>Three pigs</title>
+</head>
+<body>
+    <a-scene>
+        <a-assets>
+                <img id="brick" src="assets/Solna_Brick_wall_vilt_forband.jpg">
+                <img id="brick2" src="assets/download.jpg">
+                <img id="straw" src="assets/texture-straw-background-hay.jpg">
+                <img id="stick" src="assets/fence-4427909_1280.jpg">
+                <img id="grass" src="assets/Centipede_Grass.jpg">
+        </a-assets>
+        <a-plane scale="10 10 1"
+                rotation="-90 0 0"
+                src="#grass"
+                scale="10 10 10"></a-plane>
+        <a-plane color="gray"
+                rotation="-90 0 0"
+                position="0 .1 -2.5"
+                scale="2 2 1">
+        <a-box src="#stick"
+                position="0 0 1"
+                scale="1 1 2"></a-box> 
+            <a-triangle src="#stick"
+                        position="0 .5 2.5"
+                        side="double"
+                        rotation="90 0 0"
+                        scale="1 1 3"></a-triangle>
+            <a-triangle src="#stick"
+                        position="0 -.5 2.5"
+                        side="double"
+                        rotation="90 0 0"
+                        scale="1 1 3"></a-triangle>
+            <a-plane src="#stick"
+                    rotation="0 64 0"
+                    position="0.25 0 2.49"
+                    side="double"
+                    scale="1.1 1 1"></a-plane>
+            <a-plane src="#stick"
+                    rotation="0 -64 0"
+                    position="-0.25 0 2.49"
+                    side="double"
+                    scale="1.1 1 1"></a-plane>
+        </a-plane>
+        <!--stick-->
+        <a-plane color="gray"
+                rotation="-90 0 90"
+                position="-2.5 .1 2"
+                scale="2 2 1">
+        <a-box src="#straw"
+                position="0 0 1"
+                scale="1 1 2"
+                side="double"></a-box> 
+            <a-triangle src="#straw"
+                        position="0 .5 2.5"
+                        side="double"
+                        rotation="90 0 0"
+                        scale="1 1 3"></a-triangle>
+            <a-triangle src="#straw"
+                        position="0 -.5 2.5"
+                        side="double"
+                        rotation="90 0 0"
+                        scale="1 1 3"></a-triangle>
+                <a-plane src="#straw"
+                        rotation="0 64 0"
+                        position="0.25 0 2.49"
+                        side="double"
+                        scale="1.1 1 1"></a-plane>
+                <a-plane src="#straw"
+                        rotation="0 -64 0"
+                        position="-0.25 0 2.49"
+                        side="double"
+                        scale="1.1 1 1"></a-plane>
+        </a-plane>
+        <!--straw-->
+        <a-plane color="gray"
+                rotation="-90 0 90"
+                position="2.5 .1 2"
+                scale="2 2 1">
+        <a-box src="#brick"
+                position="0 0 1"
+                scale="1 1 2"
+                side="double"></a-box>
+            <a-triangle src="#brick"
+                position="0 .5 2.5"
+                side="double"
+                rotation="90 0 0"
+                scale="1 1 3"></a-triangle>
+            <a-triangle src="#brick"
+                position="0 -.5 2.5"
+                side="double"
+                rotation="90 0 0"
+                scale="1 1 3"></a-triangle> 
+            <a-plane src="#brick"
+                    rotation="0 64 0"
+                    position="0.25 0 2.49"
+                    side="double"
+                    scale="1.1 1 1"></a-plane>
+            <a-plane src="#brick"
+                    rotation="0 -64 0"
+                    position="-0.25 0 2.49"
+                    side="double"
+                    scale="1.1 1 1"></a-plane>
+            <a-box src="#brick2"
+                    scale=".25 .25 .25"
+                    position="-.25 -.4 1.5"
+                    depth="11.75"></a-box>
+        </a-plane>
+        <!--brick-->
+        <a-sky color="blue"></a-sky>
+    </a-scene>
+</body>
+</html>
